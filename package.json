@@ -1,0 +1,13 @@
+{
+  "name": "prompt-eval",
+  "version": "1.0.0",
+  "description": "Rubric-based evaluation of LLM responses for prompt engineering and RLHF-style review",
+  "type": "module",
+  "bin": { "prompt-eval": "bin/prompt-eval.js" },
+  "scripts": {
+    "test": "node --test test/",
+    "example": "node bin/prompt-eval.js --rubric examples/rubric.json --cases examples/cases.jsonl --out examples/report.md"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
